@@ -1,0 +1,17 @@
+# Ignore specific file extensions
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.gz
+*.tex
+*.toc
+*.vrb
+*.odt
+
+# Ignore files containing "_s" in their name
+*_s*
+
+horarios/
+estudiantes/

@@ -102,7 +102,7 @@ n_hst <- # completar
 # Definimos una función para generar edades a cada nacimiento
 # Mas adelante estudiaremos la forma correcta para simular edades a cada
 # nacimiento, en este momento necesitamos una función sencilla e intuituiva
-# que nos evite tener que definir manualmente un vector de n eades
+# que nos evite tener que definir manualmente un vector de n edades
 
 comp_edades <- function(nac){
   ed <- vector()

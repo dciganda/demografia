@@ -59,7 +59,7 @@ plot_hst(dat = hst, ylim = c(0.5, n), n = n)
 hst$cum_nac <- # completar
 hst$cum_fec <- hst$cum_nac/n
 
-plot_cum_fec(hst, c(0, 2.2), n)
+plot_cum_fec(dat = hst)
 
 # describa brevemente lo que se observa en el gráfico.
 

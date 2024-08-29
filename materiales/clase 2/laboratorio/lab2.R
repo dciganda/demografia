@@ -197,7 +197,7 @@ gen_hst <- function(n, fi, ns, mu, su){
                                   edad = wt_b[[1]]/12,
                                   paridad = 1))
   
-  for(i in 2:20){
+  for(i in 2:50){
     
     wt_b[[i]] <- wt_b[[i-1]] + ns + wt_c[[i]] + 9 #
     

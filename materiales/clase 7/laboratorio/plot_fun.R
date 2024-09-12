@@ -1,14 +1,22 @@
-
-
-plot_fx <- function(dat, points = F, ...){
+plot_fx <- function(dat, lines = FALSE, return_fx = FALSE, ...){
   fx <- table(factor(floor(dat$edad), levels = 10:50)) / max(dat$id)
-  if(points){
-    points(10:50, fx, ...)
-  }else{
+  if(lines){
+    lines(10:50, fx, ...)
+  } else {
     plot(10:50, fx, ...)
+  }
+  
+  if(return_fx){
+    return(fx)
+  }else{
+    return(sum(fx))
   }
 }
 
+add_legend <- function(vals, colors) {
+  legend_text <- sprintf("%.2f", vals)
+  legend("topright", legend = legend_text, col = colors, lty = 1, cex = 0.8)
+}
 
 plot_fx_hfd <- function(dat, cohorts, type,
                         legend = TRUE, save = FALSE) {

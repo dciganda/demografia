@@ -13,6 +13,7 @@
 # Ignore files containing "_s" in their name
 *_s*
 
+nota.txt
 asfr_hfd.txt
 diagrama_lexis.R
 na0_plot.R

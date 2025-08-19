@@ -141,7 +141,7 @@ n_hst <- merge(n_hst, as.data.frame(edad), by = "edad", all= T)
 n_hst$cum_nac <- # completar
 n_hst$cum_fec <- # completar 
 
-plot_cum_fec(n_hst, c(0, 5), n)
+plot_cum_fec(n_hst)
 
 # describa brevemente lo que se observa en el gráfico.
 
